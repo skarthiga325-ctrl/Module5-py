@@ -21,9 +21,24 @@ The program defines a class `Demo` with:
    - Create an instance of the `Demo` class.
    - Delete the object using the `del` keyword.
 ## Program
-Add code Here
+```
+class Student:
+    def __init__(self, name):
+        self.name = name
+        print("Object created")
+
+    def __del__(self):
+        print("Destructor called")
+
+student = Student("Arun")
+del student
+```
 
 ## 🧪 Output
-
+```
+Object created
+Destructor called
+```
 ## Result
+the output is verified
 
